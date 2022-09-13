@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Lifecycle from './Lifecycle';
-// import FetchCard from './FetchCard';
-// import ResizeApp from './ResizeApp';
+import FetchCard from './FetchCard';
+import ResizeApp from './ResizeApp';
 
 function App() {
   const [show, setShow] = useState(false);
@@ -13,9 +13,9 @@ function App() {
       </button>
       { show && <Lifecycle />}
       
-      {/* <FetchCard /> */}
+      <FetchCard />
 
-      {/* { show && <ResizeApp />} */}
+      { show && <ResizeApp />}
       
     </div>
   );
